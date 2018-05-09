@@ -1,0 +1,90 @@
+body {
+  background-color: black;
+  color: #fff; }
+  body .main-frame {
+    max-width: 500px;
+    margin: auto;
+    border: 2px #fff solid;
+    height: 500px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; }
+    body .main-frame div.init-box {
+      flex: 0.2;
+      border: 2px #fff solid;
+      width: 250px; }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+      body .main-frame div.init-box.fade-in {
+        opacity: 0;
+        /* make things invisible upon start */
+        -webkit-animation: fadeIn ease-in 1;
+        /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+        -moz-animation: fadeIn ease-in 1;
+        animation: fadeIn ease-in 1;
+        -webkit-animation-fill-mode: forwards;
+        /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 3s;
+        -moz-animation-duration: 3s;
+        animation-duration: 3s; }
+      body .main-frame div.init-box form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1; }
+        body .main-frame div.init-box form input {
+          width: 200px;
+          margin: 5px; }
+        body .main-frame div.init-box form label {
+          flex: 1;
+          margin: 5px; }
+        body .main-frame div.init-box form button {
+          background: url(star-16.ico), url(star-16.ico);
+          background-repeat: no-repeat, no-repeat;
+          background-size: 13px, 13px;
+          background-position: 7px 5px, 79px 5px;
+          flex: 1;
+          margin: 4px;
+          color: #453F3F;
+          font: inherit;
+          font-weight: bold;
+          height: 27px;
+          width: 100px;
+          background-color: #A8A7A7;
+          border-radius: 6px; }
+        body .main-frame div.init-box form span {
+          background-color: gray;
+          border-radius: 11PX;
+          /* height: 24px; */
+          margin: 12px;
+          padding: 0px;
+          border: 1px solid darkgray; }
+    body .main-frame div.balls-box {
+      width: 100%;
+      flex: 0.8; }
+  body h1 {
+    text-align: center; }
+
+/* For mobile phones: */
+@media only screen and (min-width: 768px) {
+  /* For desktop: */ }
+
+/*# sourceMappingURL=styles.css.map */
